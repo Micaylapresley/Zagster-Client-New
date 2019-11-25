@@ -33,3 +33,14 @@ function greeter(name){
 }
 
 greeter("Micayla Presley's")
+
+
+
+var person = {name: "Micayla", age: 30, car: {model: "Pontiac", year: 2004} } 
+console.log ("My name is " + person.name)
+console.log ("My age " + person.age)
+console.log ("My car model is " + person.car.model)
+
+if (person.age > 30){
+    alert("you're old!")
+}
