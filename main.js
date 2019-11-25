@@ -17,7 +17,7 @@
 //jQuery command. Wait until web page loads call function
 //whose name is in parentheses
 //function call means run the code
-//$(greeter)
+$(greeter)
 
 //call function add (use it - make it run)
 add(2,3);
@@ -28,8 +28,8 @@ function add(num1, num2){
     console.log("The answer is: " + answer);
     return answer;
 }
-// function greeter(name){
-//     alert("welcome to" + name + " data visualization")
-// }
+function greeter(name){
+   alert("welcome to" + name + " data visualization")
+}
 
-// greeter("Micayla Presley's")
+greeter("Micayla Presley's")
