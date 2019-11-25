@@ -1,10 +1,10 @@
-// const BASE_URL = "https://zagster-service.herokuapp.com"
+ const BASE_URL = "https://zagster-service.herokuapp.com"
 
-// $(updateView)
+ $(updateView)
 
-// function updateView() {
-//   $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
-// }
+ function updateView() {
+   $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
+ }
 
 // function updateRideCount(data) {
 //   numberOfRides = data.count
