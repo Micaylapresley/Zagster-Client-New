@@ -35,10 +35,30 @@ function perYear(data) {
     //extracting data for each month.We need to  specify which array element and then specify the key before we can get the data for that key
     //So data2016[0][9] means look at the zero-ith array element {"9":220} and extract the data associated the key 9
     //result should be 220 
-    console.log(data2016[0][9]) //print daya to the console to make sure we did it right
-    my_data.push(data2016[0][9]) //add the data to the my_data array 
-    console.log(data2016[1][10])  //looks at the one-ith array element {"10":141} extract data for key 10
-    my_data.push(data2016[1][10])  //add the data to the my_data array 
+    console.log(data2016[0][1]) //print daya to the console to make sure we did it right
+    my_data.push(data2016[0][1]) //add the data to the my_data array 
+    console.log(data2016[1][2])  //looks at the one-ith array element {"10":141} extract data for key 10
+    my_data.push(data2016[1][2])  //add the data to the my_data array
+    console.log(data2016[2][3]) 
+    my_data.push(data2016[2][3])
+    console.log(data2016[3][4])
+    my_data.push(data2016[3][4])
+    console.log(data2016[4][5])
+    my_data.push(data2016[4][5])
+    console.log(data2016[5][6])
+    my_data.push(data2016[5][6])
+    console.log(data2016[6][7])
+    my_data.push(data2016[6][7])
+    console.log(data2016[7][8])
+    my_data.push(data2016[7][8])
+    console.log(data2016[8][9])
+    my_data.push(data2016[8][9])
+    console.log(data2016[9][10])
+    my_data.push(data2016[9][10])
+    console.log(data2016[10][11])
+    my_data.push(data2016[10][11])
+    console.log(data2016[11][12])
+    my_data.push(data2016[11][12])
     //keep going to get all data points
 
    
