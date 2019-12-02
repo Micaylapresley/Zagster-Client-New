@@ -35,29 +35,6 @@ function perYear(data) {
     //extracting data for each month.We need to  specify which array element and then specify the key before we can get the data for that key
     //So data2016[0][9] means look at the zero-ith array element {"9":220} and extract the data associated the key 9
     //result should be 220 
-    console.log(data2016[0][1]) //print daya to the console to make sure we did it right
-    my_data.push(data2016[0][1]) //add the data to the my_data array 
-
-    console.log(data2016[1][2])  //looks at the one-ith array element {"10":141} extract data for key 10
-    my_data.push(data2016[1][2])  //add the data to the my_data array
-
-    console.log(data2016[2][3]) 
-    my_data.push(data2016[2][3])
-
-    console.log(data2016[3][4])
-    my_data.push(data2016[3][4])
-
-    console.log(data2016[4][5])
-    my_data.push(data2016[4][5])
-
-    console.log(data2016[5][6])
-    my_data.push(data2016[5][6])
-
-    console.log(data2016[6][7])
-    my_data.push(data2016[6][7])
-
-    console.log(data2016[7][8])
-    my_data.push(data2016[7][8])
 
     console.log(data2016[8][9])
     my_data.push(data2016[8][9])
@@ -70,37 +47,44 @@ function perYear(data) {
 
     console.log(data2016[11][12])
     my_data.push(data2016[11][12])
-    
-    //keep going to get all data points
+
+    // Function definition for updateChart()
+
+    // This function creates your chart
+
+    // Make sure you have a <canvas> element in your index with an id="myChart"
+
+    function updateChart() {
+
+        var ctx = document.getElementById('myChart').getContext('2d');        
+
+
+        var chart = new Chart(ctx, {
+
+            // The type of chart we want to create
+
+            type: 'line',
+
+            // The data for our dataset
+
+            data: {
+
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+
+                datasets: [{
+
+                    label: 'Zagster Number of Rides Per Month in 2016',
+
+                    backgroundcolor: 'rgb(255, 99, 132)',
+
+                    // data: [{{"2016":["9":220},{"10":141},{"11":89},{"12":16}],
+                }]
+            }
+        })
+    }
 
    
     //challenge - use a loop to extract the data
     //challenge extract the keys from the JSON data instead of manually typing them into the chart
      
   }
-  
-// Funtion definition for updateChart()
-// This function creates your chart
-// Make sure you have a <canvas> element in your index with an id="myChart"
-function updateChart() {
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
-
-        // The data for our dataset
-        data: {
-            labels: ['September', 'October'],
-            datasets: [{
-                label: 'Zagster Number of Rides Per Month in 2016',
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
-                //data: [0, 10, 5, 2, 20, 30, 45]
-                data: my_data  //make the chart use your my_data array
-            }]
-        },
-
-        // Configuration options go here
-        options: {}
-    });
-}
