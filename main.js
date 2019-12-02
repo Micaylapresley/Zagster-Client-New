@@ -48,7 +48,7 @@
 // //var year_list =[]
 // //year_list.push(data[2016])
 
-var data = {"2016":[{"9":220},{"10":141},{"11":89},:{"12":16}]}
+var data = {"2016":[{"9":220},{"10":141},{"11":89},{"12":16}]}
 var year_list = data[2016]
 console.log("year list is " + year_list)
 
@@ -84,14 +84,14 @@ function perYear(data) {
     console.log("2016 data by months is easy" + months2016)
 
 
-    for (var index = 0, month = 1; index <=11, month <=12, ++index, ++month) {
+    for (var index = 0, month = 1; index <=11, month <=12, ++index, ++month;) {
         months2017.push(data[2017][index][month]);
     }
 
     console.log("2017 data by months is easy" + months2017)
 
-    for (var index = 0, month = 1; index <=11, month <=12, ++index, ++month) {
+    for (var index = 0, month = 1; index <=11, month <=12, ++index, ++month;) {
         months2018.push(data[2018][index][month]);
     }
 
-    console.log("2018 data by months is easy" + months2018)
+    console.log("2018 data by months is easy" + months2018)}
