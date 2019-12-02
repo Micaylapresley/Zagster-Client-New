@@ -56,9 +56,20 @@ function perYear(data) {
 
     function updateChart() {
 
-        var ctx = document.getElementById('myChart').getContext('2d');        
-
-
+        var ctx = document.getElementById('myChart').getContext('2d');
+        
+        var stackedLine = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                scales: {
+                    yAxes: [{
+                        stacked: true
+                    }]
+                }
+            }
+        });
+        
         var chart = new Chart(ctx, {
 
             // The type of chart we want to create
