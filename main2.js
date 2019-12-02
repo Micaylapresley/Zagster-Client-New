@@ -73,11 +73,11 @@ function perYear(data) {
 
                 datasets: [{
 
-                    label: 'Zagster Number of Rides Per Month in 2016',
+                label: 'Zagster Number of Rides Per Month in 2016',
 
-                    backgroundcolor: 'rgb(255, 99, 132)',
+                backgroundcolor: 'rgb(255, 99, 132)',
 
-                    // data: [{{"2016":["9":220},{"10":141},{"11":89},{"12":16}],
+                    // data: ["2016":["9":220},{"10":141},{"11":89},{"12":16}],
                 }]
             }
         })
