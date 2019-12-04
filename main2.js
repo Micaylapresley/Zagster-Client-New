@@ -2,7 +2,7 @@
 const BASE_URL = "https://zagster-service.herokuapp.com"
 
 //call function updateView() after the page loads
-$(updateView)
+// $(updateView)
 
 
 //Arrays to hold data points pulled from JQUERY
