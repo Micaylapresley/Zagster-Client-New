@@ -11,11 +11,7 @@ var my_data = []
 //updateView() function definition
 //this function gets JSON data from the web server endpoint /rides/count/per_month and calls the function perYear()
 //after the function perYear runs it will call the function updateChart()
-function updateView() {
-  
-  $.when ($.getJSON(BASE_URL + "/rides/count/per_month", perYear), 
-    ).then(updateChart);
-}
+
 
 
 // This is what your JSON data looks like given the endpoint /rides/count/per_month 
@@ -97,5 +93,12 @@ function perYear(data) {
    
     //challenge - use a loop to extract the data
     //challenge extract the keys from the JSON data instead of manually typing them into the chart
-     
+    function updateView() {
+  
+        $.when ($.getJSON(BASE_URL + "/rides/count/per_month", perYear), 
+          ).then(updateChart);
+      }
+
+      window.onload = updateView();
+      
   }
